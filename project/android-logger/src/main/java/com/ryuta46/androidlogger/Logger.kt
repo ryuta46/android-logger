@@ -4,15 +4,15 @@ import android.util.Log
 
 class Logger(val localTag: String) {
     companion object {
-        val LOG_LEVEL_NONE = 0
-        val LOG_LEVEL_ERROR = 1
-        val LOG_LEVEL_WARN = 2
-        val LOG_LEVEL_INFO = 3
-        val LOG_LEVEL_DEBUG = 4
-        val LOG_LEVEL_VERBOSE = 5
+        const val LOG_LEVEL_NONE = 0
+        const val LOG_LEVEL_ERROR = 1
+        const val LOG_LEVEL_WARN = 2
+        const val LOG_LEVEL_INFO = 3
+        const val LOG_LEVEL_DEBUG = 4
+        const val LOG_LEVEL_VERBOSE = 5
 
-        var tag = "AndroidLogger"
-        var level = LOG_LEVEL_NONE
+        @JvmStatic var tag = "AndroidLogger"
+        @JvmStatic var level = LOG_LEVEL_NONE
     }
 
     fun e(message: String) {
