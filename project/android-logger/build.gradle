@@ -13,7 +13,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
-            pom.version = '1.0.0'
+            pom.version = '1.0.1'
             pom.groupId = 'com.ryuta46'
             pom.artifactId = 'android-logger'
         }
